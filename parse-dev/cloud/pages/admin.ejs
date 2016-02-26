@@ -6,9 +6,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Hey Now</title>
+    <title>Admin | <%= data %></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
+    <base href="/">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/bootstrap.css">
@@ -16,7 +19,7 @@
     <!-- endbuild -->
 
 
-    <script> var places = <%= data %>;</script>
+    <script> window.server_data = '<%= data %>';</script>
 
   </head>
   <body ng-app="myApp">

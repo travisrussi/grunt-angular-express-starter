@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "cubcarddev"
+    },
+    "cubcarddev": {
+      "applicationId": "6dtmxrt8UkdjiFFdNStOhxHTnaebQHdphMRtdLAf"
+    }
+  }
+}

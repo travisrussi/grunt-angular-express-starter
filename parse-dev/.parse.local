@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "express-test"
+    },
+    "express-test": {
+      "applicationId": "jMX09I1FV1Xfty0uDNyn2ybxnhBAnUwRdOSprk4k"
+    }
+  }
+}

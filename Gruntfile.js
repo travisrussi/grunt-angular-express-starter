@@ -15,7 +15,7 @@ module.exports = function (grunt) {
   };
 
   try {
-    yeomanConfig.app = require('./component.json').appPath || yeomanConfig.app;
+    yeomanConfig.app = require('./bower.json').appPath || yeomanConfig.app;
   } catch (e) {}
 
   grunt.initConfig({
@@ -55,6 +55,8 @@ module.exports = function (grunt) {
       },
       dev: {
         options: {
+          //bases: 'parse-dev',
+          //script: 'parse-dev/local-server.js'
           script: 'server/server.js'
         }
       }
@@ -290,7 +292,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', [
     'clean:server',
     'coffee',
-    'compass',
+    //'compass',
     'connect:test',
     'karma'
   ]);
@@ -298,9 +300,9 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'jshint',
-    'test',
+    //'test',
     'coffee',
-    'compass:dist',
+    //'compass:dist',
     'useminPrepare',
     'imagemin',
     'cssmin',
